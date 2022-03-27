@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  .header-btn:focus+.btn,
+  .header-btn:focus{
+    box-shadow: none;
+  }
+  /* 
+  Margin: 
+  mt --> trên 
+  me --> Phải
+  mb --> dưới
+  ms --> trái
+
+  mx --> trái phải
+  my --> trên dưới
+  */
+  .container-fluid{
+    padding: 0;
+  }
+  .navbar{
+    padding: 0;
+  }
+</style>  
+<body>
+
+  <!-- Navbar base -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="javascript:void(0)" class="navbar-brand">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link1</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link2</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+  </div>
+  
+</body>
+</html>

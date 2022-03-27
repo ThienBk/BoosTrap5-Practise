@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--DataTables -->
+    <link rel = "stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css"> 
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <!-- My framework -->
+    <link rel="stylesheet" href="./themes/base/jquery-ui.css">
+</head>
+<body>
+    <section class="section-register">
+        <div class="col-xs-2 col-sm-3 col-md-3 col-lg-4"></div>
+        <div class="col-xs-8 col-sm-6 col-md-6 col-lg-4 form-background">
+            <h3>REGISTER NOW</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <form name="registerForm" method="POST" action="" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="form-control" type="text" name="username" placeholder="username">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="form-control" type="password" name="password" placeholder="password">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="form-control" type="password" name="repassword" placeholder="retype password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="form-control" type="text" name="fullname" placeholder="fullname">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="form-control" type="email" name="email" placeholder="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <div class="form-control">Avatar: </div>
+                                <input class="avatar-upload" type="file" name="avatar" acpect="image/*">
+                                <p class="text-danger"> </p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="mycalendar form-control" name="birthday" placeholder="Birth-Day: ">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12 form-item">
+                                <input class="btn-login" type="submit" name="submit" value="REGISTER">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-3 col-md-3 col-lg-4"></div>
+    </section>
+    <script src="./bootstrap.js"></script>
+    <script src="./framework/jquery3.6.0.js"></script>
+    <script src="./jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.mycalendar').datepicker({
+                changeYear: true,
+                changeMonth: true,
+                showAnim: 'fold',
+                inline: true,
+                yearRange: '1950:2019',
+                onSelect: function(dateText, inst){
+                    alert(inst['currentDay'] + "-" + inst['currentMonth'] + "-" + inst['currentYear'] )
+                }
+            })
+        })
+    </script>
+</body>
+</html>

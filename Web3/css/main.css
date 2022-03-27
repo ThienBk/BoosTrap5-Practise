@@ -1,0 +1,138 @@
+html{
+}
+body{
+  background: #f8f9fa;
+
+}
+.header{
+  min-height: 60px;
+  background: rgb(230, 70, 70);
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.navbar{
+}
+.header-navbar{
+  text-align: center;
+}
+.title{
+  /* position: absolute;
+  left: 50%; */
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-item{
+  box-sizing: border-box;
+  font-size: 28px;
+  height: 50px;
+  background: rgb(230, 70, 70);
+  margin-left: 20px;
+}
+.nav-link{
+  color: #000;
+}
+.check-outline{
+}
+.header-btn{
+  color: rgba(0,0,0,.55);
+  font-size: 28px;
+}
+.login-btn{
+  margin-top: -8px;
+}
+.login-form{
+}
+.header-btn:focus+.btn,
+.header-btn:focus{
+  box-shadow: none;
+}
+.orther{
+  /* margin-top: 2px; */
+}
+.notifi{
+  background: none;
+  color: rgba(0,0,0,.55);
+  /* padding-top: 14px; */
+}
+.banner{
+  background: #f8f9fa;
+  margin-top: 50px;
+}
+.img-banner{
+  height: 300px;
+  width: 500px;
+}
+.modal-backdrop{
+  z-index: 1;
+}
+.modal-content{
+}
+.modal-body{
+}
+.search{
+  height: 30px;
+}
+.search-btn{
+  font-size: 16px;
+}
+.bi-search{
+  margin-bottom: 50%;
+}
+.login{
+}
+.form-login > a{
+  font-size: 16px;
+}
+.register-link{
+  text-decoration: none;
+  margin-left: 320px;
+}
+.register-css{
+  height: 700px;
+  background: #97bee5;
+}
+.register-form{
+  background: #f8f9fa;
+  border: 1px solid #000;
+  min-height: 550px;
+  margin-left: 50%;
+  margin-top: 4%;
+  transform: translateX(-50%);
+}
+.regis-css{
+  margin: 0 60px;
+}
+.regis-btn{
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.regis-check{
+  margin-left: 60px;
+}
+.banner-img{
+  width: 100%;
+  height: 300px;
+}
+.live-btn{
+  z-index: 1;
+}
+.food-now-img{
+  height: 260px;
+  width: 370px;
+}
+.nowFood-btn{
+  display: flex;
+  margin: 0 20px;
+}
+.nowFood-btn > button{
+  font-size: 14px;
+  margin: 0 2px;
+  background-color:rgb(230, 70, 70);
+  border-color: rgb(230, 70, 70);
+}

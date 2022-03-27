@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+}
+.header-row{
+  margin-bottom: -12px;
+}
+.btn-header{
+  /* margin-right: 50%;
+  transform: translateX(50%); */
+}
+.pag{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.pag-item{
+  margin-right: 126px;
+}

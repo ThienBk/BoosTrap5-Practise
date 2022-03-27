@@ -1,0 +1,29 @@
+body{
+  background: rgba(180, 172, 172, 0.575);
+}
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+}
+.banner{
+  margin-top: 70px;
+  height: 300px;
+  background-color: navy;
+}
+.event{
+  margin-top: 10px;
+  height: 100px;
+  background-color: aqua;
+}
+.content{
+  margin-top: 10px;
+  height: 800px;
+  background-color: brown;
+}
+.footer{
+  margin-top: 10px;
+  height: 500px;
+  background-color: darkgreen;
+}

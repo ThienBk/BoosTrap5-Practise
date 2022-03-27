@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+<title>Shoppee</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="header container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="header-navbar d-flex justify-content-between">
+          <nav class="nav header-navbar-left d-flex align-items-center">
+            <a class="nav-link nav-border-right" href="#">Kênh Người Bán</a>
+            <a class="nav-link nav-border-right" href="#">Trở thành Người bán Shopee</a>
+            <a class="nav-link nav-border-right" href="#">Tải ứng dụng
+              <div class="qr-app">
+                <img class="qr-img" width="180px" height="170px" src="img/qr-img.png" alt="">
+                <div class="app-list">
+                  <img src="img/appstore.png" alt="">
+                  <img src="img/ggplay.png" alt="">
+                  <img src="img/appgalerry.png" alt="">
+                </div>
+              </div>
+            </a>
+            <a class="nav-link" href="#">Kết nối</a>
+            <a class="nav-link nav-icon" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+            <a class="nav-link nav-icon" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </a>
+          </nav>
+          <nav class="nav header-navbar-right">
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell nav-icon" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>
+              Thông báo</a>
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle nav-icon" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg>
+              Hỗ Trợ</a>
+            <a class="nav-link nav-border-right" href="#">Đăng ký</a>
+            <a class="nav-link" href="#">Đăng nhập</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container header-with-search">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-2 header-banner d-flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bag-plus-fill header-icon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z"/>
+          </svg>
+          <h3>Shoppee</h3>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="header-search">
+            <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </button>
+            </form>
+            <ul class="header-list d-flex">
+              <li class="header-list-item"><a href="">Áo khoác</a></li>
+              <li class="header-list-item"><a href="">Váy</a></li>
+              <li class="header-list-item"><a href="">Quần</a></li>
+              <li class="header-list-item"><a href="">Túi xách nữ</a></li>
+              <li class="header-list-item"><a href="">Dép</a></li>
+              <li class="header-list-item"><a href="">Chân váy</a></li>
+              <li class="header-list-item"><a href="">Dép nữ</a></li>
+              <li class="header-list-item"><a href="">Tai nghe</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart-plus header-icon-right" viewBox="0 0 16 16">
+            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid banner">
+      <div class="row">
+        <img src="img/full-home-banner.png" alt="" class="banner-img-background">
+        <div class="banner-img d-flex">
+          <div class="col-md-8 banner-img-left text-center">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/banner-img-left.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-img-left1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-img-left2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-img-left3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/banner-img-left4.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="banner-img-right">
+              <img class="right-banner-1" width="100%" src="img/banner-img-right1.png" alt="">
+              <img class="right-banner-2" width="100%" src="img/banner-img-right2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <ul class="event-list d-flex justify-content-around text-center">
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event1.png" width="45px" height="45px" alt="">
+            <p>Tech Zone - Siêu Thị Điện Tử</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event2.png" width="45px" height="45px" alt="">
+            <p>Gì Cũng Rẻ - Từ 1K</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event3.png" width="45px" height="45px" alt="">
+            <p>Hoàn Xu 20% - Đơn Từ 0Đ</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event4.png" width="45px" height="45px" alt="">
+            <p>Nạp Thẻ, Hóa Đơn & E-voucher</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event5.png" width="45px" height="45px" alt="">
+            <p>Freeship Xtra đến 70k mỗi ngày </p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event6.png" width="45px" height="45px" alt="">
+            <p>Hàng Hiệu -50% - Voucher -50%</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event7.png" width="45px" height="45px" alt="">
+            <p>Hàng Quốc Tế - Deal Đồng Giá</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event8.png" width="45px" height="45px" alt="">
+            <p>Shopee Premium</p>
+          </a>
+        </li>
+        <li class="event-item">
+          <a class="event-item-link" href="">
+            <img src="img/event9.png" width="45px" height="45px" alt="">
+            <p>Mừng Ngày Xuống Phố</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+        <img class="banner-2" src="img/banner2.png" width="1210px" height="110px" alt="">
+    <div class="conatiner extral-sale">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="img/content-header-img.jpg" alt="" width="1210px" class="content-header-img">
+          <div class="extral-content">
+            <div class="extral-list d-flex">
+              <ul class="col-md-6">
+                <div class="extral-list-1 d-flex justify-content-between">
+                  <li class="extral-list-item extral-p"><a href="">SẢN PHẨM BÁN CHẠY</a></li>
+                  <li class="extral-list-item"><a href="">
+                    Xem thêm
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                      <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                  </a></li>
+                </div>
+                <div class="extral-produce d-flex justify-content-evenly">
+                  <div class="extral-produce-1 text-center">
+                    <div class="sale d-flex flex-column">
+                      <span class="extral-p">50%</span>
+                      <span>GIẢM</span>
+                    </div>
+                    <img src="img/extral-img-1.jpg" width="162px" height="162px" alt="">
+                    <p class="extral-p">₫50.000</p>
+                  </div>
+                  <div class="extral-produce-1 text-center">
+                    <div class="sale d-flex flex-column">
+                      <span class="extral-p">50%</span>
+                      <span>GIẢM</span>
+                    </div>
+                    <img src="img/extral-img-2.png" width="162px" height="162px" alt="">
+                    <p class="extral-p">₫159.000</p>
+                  </div>
+                  <div class="extral-produce-1 text-center">
+                    <div class="sale d-flex flex-column">
+                      <span class="extral-p">50%</span>
+                      <span>GIẢM</span>
+                    </div>
+                    <img src="img/extral-img-3.jpg" width="162px" height="162px" alt="">
+                    <p class="extral-p">₫155.000</p>
+                  </div>
+                </div>
+              </ul>
+              <ul class="col-md-6">
+                <div class="extral-list-2 d-flex justify-content-between">
+                  <li class="extral-list-item extral-p"><a href="">THƯƠNG HIỆU NỔI BẬT</a></li>
+                  <li class="extral-list-item extral-list-item-2"><a href="">
+                    Xem thêm
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                      <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                  </a></li>
+                </div>
+                <div class="extral-produce ex-produce-2 d-flex justify-content-evenly">
+                  <div class="extral-produce-2 text-center">
+                    <img src="img/extral-img-4.jpg" width="162px" height="162px" alt="">
+                    <p class="extral-p">FOCALLURE</p>
+                  </div>
+                  <div class="extral-produce-2 text-center">
+                    <img src="img/extral-img-5.jpg" width="162px" height="162px" alt="">
+                    <p class="extral-p">LANBENA VN</p>
+                  </div>
+                  <div class="extral-produce-2 text-center">
+                    <img src="img/extral-img-6.jpg" width="162px" height="162px" alt="">
+                    <p class="extral-p">THIÊN LONG</p>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <img src="img/content-extral-end.jpg" width="1210px" alt="">
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="rols">
+      <img src="img/rols.jpg" alt="" width="1210px" class="rols-img">
+      <div class="rols-bottom">
+          <p class="rols-p">Sản phẩm bán chạy</p>
+          <a class="rols-link" href="">Xem thêm > </a>
+      </div>
+  </div>
+  <div class="P1">
+      <div class="selling-product product-1">
+          <img src="img/selling-product-1.jpg" alt="">
+          <p>₫3.900</p>
+      </div>
+      <div class="selling-product product-2">
+          <img src="img/selling-product-2.jpg" alt="">
+          <p>₫59.000</p>
+      </div>
+      <div class="selling-product product-3">
+          <img src="img/selling-product-3.jpg" alt="">
+          <p>₫30.000</p>
+      </div>
+      <div class="selling-product product-4">
+          <img src="img/selling-product-4.jpg" alt="">
+          <p>₫3.850</p>
+      </div>
+      <div class="selling-product product-5">
+          <img src="img/selling-product-5.jpg" alt="">
+          <p>₫239.900</p>
+      </div>
+      <div class="selling-product product-6">
+          <img src="img/selling-product-6.jpg" alt="">
+          <p>₫122.000</p>
+      </div>
+      <div class="rols-bottom-end">
+          
+      </div>
+  </div>
+  <div class="P2">
+      <p>DANH MỤC</p>
+      <div class="P2_grid-container">
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item1.png" alt= "">
+                  <p>Thời Trang Nam</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item2.png" alt= "">
+                  <p>Điện Thoại & Phụ Kiện</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item3.png" alt= "">
+                  <p>Thiết Bị Điện Tử</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item4.png" alt= "">
+                  <p>Máy Tính & Laptop</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item5.png" alt= "">
+                  <p>Máy Ảnh & Máy Quay Phim</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item6.png" alt= "">
+                  <p>Đồng Hồ</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item7.png" alt= "">
+                  <p>Giày Dép Nam</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item8.png" alt= "">
+                  <p>Thiết Bị Điện Gia Dụng</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item9.png" alt= "">
+                  <p>Thể Thao & Du Lịch</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item10.png" alt= "">
+                  <p>Ô Tô & Xe Máy & Xe Đạp</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item11.png" alt= "">
+                  <p>Thời Trang Nữ</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item12.png" alt= "">
+                  <p>Mẹ & Bé</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item13.png" alt= "">
+                  <p>Nhà Cửa & Đời Sống</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item14.png" alt= "">
+                  <p>Sắc Đẹp</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item15.png" alt= "">
+                  <p>Sức Khỏe</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item16.png" alt= "">
+                  <p>Giày Dép Nữ</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item17.png" alt= "">
+                  <p>Túi Ví Nữ</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item18.png" alt= "">
+                  <p>Phụ Kiện & Trang Sức Nữ</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item19.png" alt= "">
+                  <p>Bách Hóa Online</p>
+              </a>
+          </div>
+          <div class="P2_grid-item">
+              <a href="">
+                  <img src="img/P2-item20.png" alt= "">
+                  <p>Nhà Sách Online</p>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="tabs-header">
+      <a href="">GỢI Ý HÔM NAY</a>
+      <a href="">
+          <img src="img/tabs-header-img.png" width="1210px" alt="">
+      </a>
+  </div>
+  <div class="tab-grid-container">
+      <div class="tab-item">
+          <img src="img/tabs-item-1.jpg" alt="">
+          <p class="description">[🔔 XẢ KHO] Giày 𝐍𝐢𝐤𝐞 trắng, 𝐍𝐢𝐤𝐞 AF1 Màu Trắng Bản Đẹp Tiêu Chuẩn Hot Hit 2021</p>
+          <span>
+              <p class="price">đ39.434</p>
+              <p class="sellded">Đã bán 635</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-2.jpg" alt="">
+          <p class="description">[Sale Sốc]Quần Dài Thể Thao Ống Rộng Nữ 🌸 Culottes Suông 1 Sọc, 2 Sọc, 3 Sọc Ulzzang Hot🌸</p>
+          <span>
+              <p class="price">đ7.900</p>
+              <p class="sellded">Đã bán 600</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-3.jpg" alt="">
+          <p class="description">[ TẶNG GIÀY Jordan 7 ] Mua hộp TẶNG Giày thời trang bóng rổ cao cổ Nam siêu hót</p>
+          <span>
+              <p class="price">đ742.000</p>
+              <p class="sellded">Đã bán 500</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-4.jpg" alt="">
+          <p class="description">Pijama nữ cao cấp-Đồ bộ</p>
+          <span>
+              <p class="price">đ140.000</p>
+              <p class="sellded">Đã bán 600</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-5.jpg" alt="">
+          <p class="description">Áo thun tay lỡ nam nữ Vans Unisex oversize form rộng áo phông rộng mùa hè</p>
+          <span>
+              <p class="price">đ10.000</p>
+              <p class="sellded">Đã bán 500</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-6.jpg" alt="">
+          <p class="description">Quần Caro Baggy Nam Nữ Ống Rộng Unisex Plaid pants SIB005 - SIB CLothing</p>
+          <span>
+              <p class="price">đ109.000</p>
+              <p class="sellded">Đã bán 400</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-7.jpg" alt="">
+          <p class="description">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</p>
+          <span>
+              <p class="price">đ68.000</p>
+              <p class="sellded">Đã bán 350</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-8.jpg" alt="">
+          <p class="description">Áo thun tay lỡ form rộng có up hình thật ở cuối</p>
+          <span>
+              <p class="price">đ13.000</p>
+              <p class="sellded">Đã bán 700</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-9.jpg" alt="">
+          <p class="description">Hiển Thị Cái Mũ Cô Dâu Hiển Thị Trang Phục Cưới Đám Cưới Trung Quốc Bầu Không Khí Tua Phoenix Bước Vương Miện Phụ Kiện Tóc Nữ</p>
+          <span>
+              <p class="price">đ495.752</p>
+              <p class="sellded">Đã bán 200</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-10.jpg" alt="">
+          <p class="description">bộ tt chạy vạch</p>
+          <span>
+              <p class="price">đ30.000</p>
+              <p class="sellded">Đã bán 650</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-11.jpg" alt="">
+          <p class="description">ĐẸP NÕN NÀ - DA SÁNG MỊN RẠNG RỠ Combo 3 Chai 82X: COLLAGEN + SAKURA COLLAGEN + SAKURA PLACENTA Nước Uống Đẹp Da Từ Nhật</p>
+          <span>
+              <p class="price">đ7000.000</p>
+              <p class="sellded">Đã bán 1</p>
+          </span>
+      </div>
+      <div class="tab-item">
+          <img src="img/tabs-item-12.jpg" alt="">
+          <p class="description">Hải Anh Uniform Áo Lớp Funny Sunny</p>
+          <span>
+              <p class="price">đ250.000</p>
+              <p class="sellded">Đã bán 1200</p>
+          </span>
+      </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
